@@ -24,7 +24,7 @@ def call(){
       sh "gradle bootRun&"
       sh "sleep 20 && curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=testing'"
   }
-  /*
+  
   stage("Paso 6: Subir Nexus"){
       nexusPublisher nexusInstanceId: 'nexus',
       nexusRepositoryId: 'devops-usach-nexus',
@@ -54,6 +54,6 @@ def call(){
   stage("Paso 9: Testear Artefacto - Dormir(Esperar 20sg) "){
       sh "sleep 20 && curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=testing'"
   }
-  */
+  
 }
 return this;
