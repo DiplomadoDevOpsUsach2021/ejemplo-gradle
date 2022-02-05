@@ -3,6 +3,7 @@ pipeline {
     environment {
         NEXUS_USER         = credentials('NEXUS-USER')
         NEXUS_PASSWORD     = credentials('NEXUS-PASS')
+        TAREA              = "";
     }
     parameters {
         choice(
