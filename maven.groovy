@@ -14,7 +14,7 @@ def call(){
     sh "mvn clean test -e"
   }
 
-  env.TAREA = 'Paso 3: Build .Jar'
+  /*env.TAREA = 'Paso 3: Build .Jar'
   stage("${env.TAREA}"){
       sh "mvn clean package -e"
   }
@@ -70,6 +70,7 @@ def call(){
   stage("${env.TAREA}"){
       sh "sleep 20 && curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=testing'"
   }
+  */
   
 }
 return this;
